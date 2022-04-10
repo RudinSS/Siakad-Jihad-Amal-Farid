@@ -8,7 +8,7 @@
 
 -------------- PENJELASAN ------------------------
 
-- Pada file main.cpp di line 1-7 berisi #include, include untuk mendefinisikan library yang akan digunakan dalam suatu program. Pada int main, line 13-15 yaitu 
+Pada file main.cpp di line 1-7 berisi #include, include untuk mendefinisikan library yang akan digunakan dalam suatu program. Pada int main, line 13-15 yaitu 
 vector mahasiswa, dosen, dan tendik yang nantinya sebagai penghitung jumlah yang sudah terdata, jumlah yang terdata akan terhitung pada line 22-24. Line 20-33 
 menampilkan teks yang akan dikeluarkan oleh programnya, teks tersebut menampilkan pilihan yang nanti kita akan pilih untuk pendataan dan jumlah orang yang 
 terdata. Line 34 untuk mengisi sebuah angka yang nantinya pada line 36 akan terdata, pilihan hanyak dan jika mengisi 1 akan mengisi data mahasiswa, angka 2 untuk 
