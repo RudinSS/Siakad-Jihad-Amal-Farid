@@ -166,7 +166,7 @@ int main()
                 		cin.ignore();
                 		getline(cin, nama_matkul);
                 		Matkul inputMatkul = Matkul(nama_matkul);
-                		recMatkul.push_back(inputMatkul);
+                		recMatkul.push_back(inputMatkul); 
             		} 
 			break;
 		}
