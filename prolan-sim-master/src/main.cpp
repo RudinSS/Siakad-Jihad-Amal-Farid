@@ -5,6 +5,7 @@
 #include "include/mahasiswa.hpp"
 #include "include/dosen.hpp"
 #include "include/tendik.hpp"
+#include "include/matkul.hpp"
 
 using namespace std;
 
@@ -13,6 +14,8 @@ int main()
 	vector<mahasiswa> recMhs;
 	vector<dosen> recDosen;
 	vector<tendik> recTendik;
+	vector<Matkul> recMatkul;
+	
 
 	int menu_terpilih;
 
@@ -22,6 +25,7 @@ int main()
 		cout << "  1. Jumlah Mahasiswa             : " << recMhs.size() << " Mahasiswa" << endl;
 		cout << "  2. Jumlah Dosen                 : " << recDosen.size() << " Dosen" << endl;
 		cout << "  3. Jumlah Tenaga Kependidikan   : " << recTendik.size() << " Tenaga Kependidikan" << endl;
+		cout << "  4. Jumlah Mata Kuliah           : " << recMatkul.size() << " mata kuliah" << endl;
 		cout << endl;
 		cout << "Menu: " << endl;
 		cout << "  1. Tambah Mahasiswa" << endl;
@@ -30,6 +34,7 @@ int main()
 		cout << "  4. Tampilkan semua Mahasiswa" << endl;
 		cout << "  5. Tampilkan semua Dosen" << endl;
 		cout << "  6. Tampilkan semua Tenaga Kependidikan" << endl;
+		cout << "  7. Tambah Mata Kuliah" << endl;
 		cout << "-> Silahkan memilih salah satu: ";
 		cin >> menu_terpilih;
 
@@ -154,6 +159,18 @@ int main()
 				}
 			}
 				break;
+			case 7:
+			{
+                string nama_matkul;
+				cout << "Masukkan nama matkul : ";
+                cin.ignore();
+                getline(cin, nama_matkul);
+            
+                Matkul inputMatkul = Matkul(nama_matkul);
+
+                recMatkul.push_back(inputMatkul);
+            } 
+			break;
 		}
 	}
 
