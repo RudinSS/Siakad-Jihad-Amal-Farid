@@ -161,15 +161,13 @@ int main()
 				break;
 			case 7:
 			{
-                string nama_matkul;
+                		string nama_matkul;
 				cout << "Masukkan nama matkul : ";
-                cin.ignore();
-                getline(cin, nama_matkul);
-            
-                Matkul inputMatkul = Matkul(nama_matkul);
-
-                recMatkul.push_back(inputMatkul);
-            } 
+                		cin.ignore();
+                		getline(cin, nama_matkul);
+                		Matkul inputMatkul = Matkul(nama_matkul);
+                		recMatkul.push_back(inputMatkul);
+            		} 
 			break;
 		}
 	}
